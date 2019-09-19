@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700");
+@import url("https://fonts.googleapis.com/css?family=Roboto+Slab");
+@font-face {
+  font-family: secondFont;
+  src: url("../fonts/droid-serif.italic.ttf");
+}
+
+/* General */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  box-sizing: border-box;
+}
+
+.container {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.container-fluid {
+  padding: 0;
+}
+
+h1 {
+  color: #222222;
+  font-size: 40px;
+  font-weight: 700;
+}
+
+p {
+  color: #777777;
+  font-family: secondFont;
+  font-size: 16px;
+}
+
+.row h1 {
+  font-size: 18px;
+}
+
+.row p {
+  font-family: 'Roboto Slab', serif;
+  font-size: 14px;
+}
+
+/* Section header */
+.header {
+  height: 100vh;
+  position: relative;
+  color: white;
+}
+
+.header::before {
+  content: "";
+  display: block;
+  height: 100vh;
+  position: absolute;
+  left: 0;
+  right: 0;
+  background-image: url("../images/hero-image.png");
+  background-size: cover;
+  z-index: -1;
+  filter: brightness(50%);
+}
+
+.navbar-inverse {
+  border: none;
+  background-color: transparent;
+}
+
+.navbar-inverse .navbar-nav {
+  float: right;
+}
+
+.navbar-inverse .navbar-nav li a {
+  font-size: 14px;
+  color: inherit;
+  transition: 0.5s;
+}
+
+.navbar-inverse .navbar-nav li a:hover {
+  color: #fed136;
+}
+
+.navbar-inverse .navbar-toggle {
+  border: none;
+  transition: 0.5s;
+}
+
+.navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus {
+  background-color: #fed136;
+}
+
+.hero {
+  margin-top: 30vh;
+}
+
+.hero h2 {
+  font-family: secondFont;
+  font-size: 40px;
+  letter-spacing: -1px;
+}
+
+.hero p {
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 75px;
+  font-weight: 700;
+}
+
+.hero button {
+  background-color: #fed136;
+  margin-top: 10px;
+  color: white;
+  font-family: inherit;
+  font-size: 18px;
+  font-weight: 700;
+  border: none;
+  border-radius: 3px;
+  transition: 0.5s;
+}
+
+.hero button:hover {
+  background-color: white;
+  color: #fed136;
+}
+/*# sourceMappingURL=style.css.map */
