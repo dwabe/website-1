@@ -132,3 +132,38 @@ p {
       @include button;
   }
 }
+
+/* Section services */
+
+.services {
+  
+  .row {
+    margin-top: 100px;
+    
+    .col-md-4 {
+      padding: 0 20px;
+      margin-bottom: 50px;
+    }
+    
+    .fa {
+      width: 80px;
+      height: 80px;
+      position: relative;
+      color: $attention-color;
+      font-size: 40px;
+      border: 4px solid $attention-color;
+      border-radius: 50%;
+      transition: 0.5s;
+      &::before {
+        width: 70px;
+        position: absolute;
+        left: 0;
+        top: 14px;
+      }
+      &:hover {
+        border-color: $header-color;
+        color: $header-color;
+      }
+    }
+  }
+}
