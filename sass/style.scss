@@ -236,9 +236,9 @@ p {
   }
 }
 
-/* Section: about */
+/* Section: about-us */
 
-.about {
+.about-us {
 
   .row {
     &:nth-of-type(1) {
@@ -293,5 +293,45 @@ p {
       color: white;
       text-shadow: 1px 0px 1px rgba(0, 0, 0, 0.7);
     }
+  }
+}
+
+/* Section: our-team */
+
+.our-team {
+  background-color: #f7f7f7;
+  
+  .text-padding {
+    padding: 0 200px;
+    font-family: 'Roboto Slab', serif;
+  }
+  
+  .row {
+    margin-top: 100px;
+    h1 {
+      font-size: 16px;
+    }
+  }
+
+  img {
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+}
+
+.our-team .fa,
+footer .fa {
+  width: 45px;
+  height: 45px;
+  padding: 10px;
+  margin-bottom: 50px;
+  font-size: 20px;
+  border: 3px solid $header-color;
+  border-radius: 50%;
+  &:hover {
+      color: $attention-color;
+      border-color: $attention-color;
   }
 }
