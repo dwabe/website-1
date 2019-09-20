@@ -66,7 +66,7 @@ p {
   }
 }
 
-/* Section header */
+/* Section: header */
 
 .header {
   height: 100vh;
@@ -133,7 +133,7 @@ p {
   }
 }
 
-/* Section services */
+/* Section: services */
 
 .services {
   
@@ -164,6 +164,134 @@ p {
         border-color: $header-color;
         color: $header-color;
       }
+    }
+  }
+}
+
+/* Section: portfolio */
+
+.portfolio {
+  background-color: #f7f7f7;
+  
+  .row {
+    margin-top: 50px;
+    
+    .col-md-4 {
+      display: flex;
+      margin-bottom: 50px;
+      flex-direction: column;
+      align-items: center;
+      
+      img {
+        width: 291px;
+      }
+
+      h1 {
+        padding-top: 20px;
+      }
+
+      p {
+        font-family: secondFont;
+        padding-bottom: 20px;
+      }
+
+      h1, p {
+        background-color: white;
+        margin: 0;
+        width: 291px;
+      }
+
+      .image-box {
+        width: 291px;
+        height: 301px;
+        position: relative;
+      }
+
+      .layer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;	
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        transition: 0.5s;
+        
+        h4 {
+          visibility: hidden;
+          padding: 5px;
+          color: #CCA45D;
+          border: 2px solid #CCA45D;
+        }
+        &:hover {
+          background-color: rgba(0, 0, 0, 0.8);
+          
+          h4 {
+            visibility: visible;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* Section: about */
+
+.about {
+
+  .row {
+    &:nth-of-type(1) {
+      margin-top: 50px;
+    }
+
+    h1 {
+      margin-top: 0;
+    }
+  }
+
+  .col-md-12 {
+    display: flex;
+    justify-content: center;
+  }
+
+  img {
+    border: 7px solid #f1f1f1;
+    border-radius: 50%;
+    transition: 0.5s;
+    &:hover {
+      border-color: $attention-color;
+    }
+  }
+
+  .line-box {
+    display: flex;
+    justify-content: center;
+  }
+
+  .line {
+    width: 3px;
+    height: 95px;  
+    background-color: #f1f1f1;
+  }
+
+  .our-story {
+    height: 160px;
+    width: 160px;
+    background-color: $attention-color;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 7px solid #f1f1f1;
+    border-radius: 50%;
+    transition: 0.5s;
+    &:hover {
+      border-color: $attention-color;
+    }
+
+    h1 {
+      color: white;
+      text-shadow: 1px 0px 1px rgba(0, 0, 0, 0.7);
     }
   }
 }
