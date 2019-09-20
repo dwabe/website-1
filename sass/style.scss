@@ -322,7 +322,7 @@ p {
 }
 
 .our-team .fa,
-footer .fa {
+.footer .fa {
   width: 45px;
   height: 45px;
   padding: 10px;
@@ -395,5 +395,25 @@ footer .fa {
   button {
     @include button;
     text-transform: uppercase;
+  }
+}
+ /* Section: footer */
+
+.footer {
+  display: flex;
+  align-items: center;
+
+  p {
+    margin: 0;
+    padding: 10px 100px 10px 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+  }
+
+  .fa {
+    color: white;
+    background-color: $header-color;
+    margin-bottom: 0;
+    margin-right: 10px;
   }
 }

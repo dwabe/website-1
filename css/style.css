@@ -322,7 +322,7 @@ p {
 }
 
 .our-team .fa,
-footer .fa {
+.footer .fa {
   width: 45px;
   height: 45px;
   padding: 10px;
@@ -333,7 +333,7 @@ footer .fa {
 }
 
 .our-team .fa:hover,
-footer .fa:hover {
+.footer .fa:hover {
   color: #fed136;
   border-color: #fed136;
 }
@@ -417,5 +417,27 @@ footer .fa:hover {
 .contact button:hover {
   background-color: white;
   color: #fed136;
+}
+
+/* Section: footer */
+.footer {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+}
+
+.footer p {
+  margin: 0;
+  padding: 10px 100px 10px 10px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+}
+
+.footer .fa {
+  color: white;
+  background-color: #222222;
+  margin-bottom: 0;
+  margin-right: 10px;
 }
 /*# sourceMappingURL=style.css.map */
